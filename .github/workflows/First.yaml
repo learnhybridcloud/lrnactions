@@ -28,4 +28,4 @@ jobs:
         - name: thrd jobs
           run: echo "3rd job"
         - name : third two
-          run: "sthird two"
+          run: echo "sthird two"
