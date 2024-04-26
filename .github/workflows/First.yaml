@@ -11,4 +11,22 @@ jobs:
         run: |-
           node -v
           npm -v
+
+  parrell:
+    runs-on: ubuntu-latest
+    steps:
+      - name: second jobs
+        run: echo "second job"
+      - name : second two
+        run: echo "scond two"
+
+  third:
+      runs-on: ubuntu-latest
+      needs: run-shell-commands
+      steps:
+        - name: thrd jobs
+          run: echo "3rd job"
+        - name : third two
+          run: echo "sthird two"
+               
         
