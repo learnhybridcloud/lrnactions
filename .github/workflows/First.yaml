@@ -22,7 +22,7 @@ jobs:
 
   third:
       runs-on: ubuntu-latest
-      needs: run-shell-commands
+      needs: [run-shell-commands,parrell]
       steps:
         - name: thrd jobs
           run: echo "3rd job"
