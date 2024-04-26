@@ -2,10 +2,10 @@ name: Display working location
 on: [push]
 
 jobs: 
-  display-loaction
+  display-loaction:
     runs-on : ubuntu-latest
     steps:
-      - name: loaction will display
-        runs: |-
+      - name: loaction
+        run: |
           pwd
-          ls      
+          ls -a    
