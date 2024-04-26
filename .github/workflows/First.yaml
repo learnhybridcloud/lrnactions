@@ -14,6 +14,7 @@ jobs:
 
   parrell:
     runs-on: ubuntu-latest
+    needs: [run-shell-commands]
     steps:
       - name: second jobs
         run: echo "second job"
@@ -22,7 +23,7 @@ jobs:
 
   third:
       runs-on: ubuntu-latest
-      needs: [run-shell-commands,parrell]
+      needs: [parrell]
       steps:
         - name: thrd jobs
           run: echo "3rd job"
