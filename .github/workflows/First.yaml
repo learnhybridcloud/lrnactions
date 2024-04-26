@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: second jobs
         run: echo "second job"
-      - name : second two
+      - name : second two1
         run: echo "scond two"
 
   third:
